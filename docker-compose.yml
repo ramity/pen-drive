@@ -1,0 +1,16 @@
+services:
+
+  wryre_python:
+    build:
+      context: ./
+      dockerfile: ./docker/python/Dockerfile
+    container_name: wryre_python
+    image: wryre_python
+    networks:
+      - wryre_python
+    volumes:
+      - ./src:/wryre
+
+networks:
+  wryre_python:
+    driver: bridge
