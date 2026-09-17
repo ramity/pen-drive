@@ -67,7 +67,7 @@ plt.imsave("image.png", image, cmap="gray")
 
 # Generate 3D grid coordinate offsets
 x_coords = np.arange(cell_x) * cell_width
-y_coords = np.arange(cell_y) * cell_height
+y_coords = (cell_y - 1 - np.arange(cell_y)) * cell_height
 grid_x, grid_y = np.meshgrid(x_coords, y_coords)
 offsets = np.stack(
     [grid_x.ravel(), grid_y.ravel(), np.zeros(cell_x * cell_y)], axis=-1
@@ -79,6 +79,9 @@ flat_grid = cell_grid.ravel()
 for color in palette:
     match_mask = flat_grid == color
     color_offsets = offsets[match_mask]
+
+    print(color_offsets)
+
     num_cells = len(color_offsets)
 
     if num_cells == 0:

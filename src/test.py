@@ -163,7 +163,6 @@ class ReedSolomon:
 
         return bytes(msg_list[:-self.n_sym])
 
-
 # =====================================================================
 # Main Image Storage Pipeline & Verification
 # =====================================================================
