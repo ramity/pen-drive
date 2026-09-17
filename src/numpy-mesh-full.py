@@ -5,8 +5,8 @@ from stl import mesh
 
 # Configuration Parameters
 # plot_width, plot_height = 181, 206
-plot_width, plot_height = 50, 50
-cell_width, cell_height, cell_depth = 0.4, 0.4, 0.1
+plot_width, plot_height = 80, 80
+cell_width, cell_height, cell_depth = 0.8, 0.8, 0.1
 stroke_size = 0.2
 colors = 10
 
