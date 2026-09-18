@@ -1,6 +1,6 @@
-# Wryre (Pen Plot as a Storage Medium)
+# Wryre
 
-Storing data on paper in the form of pen plots.
+Storing data in pen.
 
 ![workflow](docs/graph.png)
 
@@ -10,14 +10,14 @@ Storing data on paper in the form of pen plots.
 
 ### Produced Plot
 
-![scan](docs/new_poc_cropped_scan.png)
+![scan](docs/80mmx80mmx10x0.8mmx0.8mmx0.2mm/crop.png)
 
 > Proof of concept: ~12kb lossly stored on a sheet of cardstock.
 > 80mm x 80mm plot, 10 colors, 0.8mm x 0.8mm cell size, 0.2mm resolution
 
 ### Source WryCode
 
-![source](data/80mmx80mmx10x0.8mmx0.8mmx0.2mm/image.png)
+![source](docs/80mmx80mmx10x0.8mmx0.8mmx0.2mm/code.png)
 
 > Source WryCode used to create the produced plot.
 
