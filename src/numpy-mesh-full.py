@@ -55,7 +55,7 @@ print(f"Storage in KB: {storage_in_kb}")
 print(f"Cell Resolution: {cell_x_res} x {cell_y_res}")
 
 # Palette setup
-step = 4096 // colors
+step = 4096 // (colors - 1)
 palette = list(range(0, 4096, step))
 
 # Generate grid state directly (1 value per cell)

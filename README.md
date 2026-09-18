@@ -1,8 +1,25 @@
 # Wryre (Pen Plot as a Storage Medium)
 
-![scan](docs/poc_cropped_scan.png)
+Storing data on paper in the form of pen plots.
 
-> 18.7kb lossly stored on a 50mm x 50mm plot using a cell size of 0.4mm x 0.4mm and 0.2mm resolution onto a sheet of US letter paper, via a Prusa MK4S+ with 10 colors.
+![workflow](docs/graph.png)
+
+> Workflow diagram
+
+## Proof of Concept
+
+### Produced Plot
+
+![scan](docs/new_poc_cropped_scan.png)
+
+> Proof of concept: ~12kb lossly stored on a sheet of cardstock.
+> 80mm x 80mm plot, 10 colors, 0.8mm x 0.8mm cell size, 0.2mm resolution
+
+### Source WryCode
+
+![source](data/80mmx80mmx10x0.8mmx0.8mmx0.2mm/image.png)
+
+> Source WryCode used to create the produced plot.
 
 # Theory
 
@@ -33,7 +50,7 @@ The storage density of wryre is determined by the following factors:
 3. Size of each cell
 4. Error correction coding
 
-Example:
+#### Example Calculation 1:
 
 ```
 Colors = 10
@@ -50,6 +67,8 @@ Storage = cells * colors
         = 186,430 bytes
         = 186.43 KB
 ```
+
+#### Example Calculation 2:
 
 ```
 Colors = 10
@@ -71,7 +90,7 @@ Storage = cells * colors
 
 ### Encoding
 
-`numpy-mesh-full.py` generates `image.png` and converts the image into a its component `.stl` files.
+`numpy-mesh-full.py` generates random data, saves it to `image.png`, and converts the image into a its component `.stl` files.
 
 ![example generated data](docs/data-example.png)
 > plot 80mm x 80mm, 10color, cell 0.8mm x 0.8mm @ 0.2mm resolution
@@ -90,6 +109,3 @@ In a past project, I made a mounting system for attaching things to my Prusa MK4
 The base 3mf file includes all the settings and logic needed to make doing a multi-color plot as simple as possible. Modified start sequence, gcode automatically pauses between parts.
 
 `NTH 80mm x 80mm x 10color.3mf` contains the 10 STLs combined into a single 3mf file. One can select to reload the imported files to persist updates to image.png.
-
-### Example
-
