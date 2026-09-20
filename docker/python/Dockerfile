@@ -43,6 +43,6 @@ RUN cd /root/opencv/build && make install
 # Add "python" alias
 RUN echo 'alias python="python3"' >> ~/.bashrc
 
-WORKDIR /wryre
+WORKDIR /pen-drive
 
 ENTRYPOINT sleep infinity

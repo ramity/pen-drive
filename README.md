@@ -1,4 +1,4 @@
-# Wryre
+# Pen Drive
 
 Storing data in pen.
 
@@ -43,7 +43,7 @@ Plot -(scan)-> scan.jpg -(convert)-> Data
 
 ### Density
 
-The storage density of wryre is determined by the following factors:
+The storage density of pen drive is determined by the following factors:
 
 1. Number of colors
 2. Size of the plot

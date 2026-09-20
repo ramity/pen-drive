@@ -1,16 +1,16 @@
 services:
 
-  wryre_python:
+  pen_drive_python:
     build:
       context: ./
       dockerfile: ./docker/python/Dockerfile
-    container_name: wryre_python
-    image: wryre_python
+    container_name: pen_drive_python
+    image: pen_drive_python
     networks:
-      - wryre_python
+      - pen_drive
     volumes:
-      - ./src:/wryre
+      - ./src:/pen-drive
 
 networks:
-  wryre_python:
+  pen_drive:
     driver: bridge
