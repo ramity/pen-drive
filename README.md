@@ -147,7 +147,7 @@ Storage = cells * colors
 
 `numpy-mesh-full.py` generates random data, saves it to `image.png`, and converts the image into a its component `.stl` files.
 
-![example generated data](docs/data-example.png)
+![example generated data](docs/80mmx80mmx10x0.8mmx0.8mmx0.2mm/code.png)
 > plot 80mm x 80mm, 10color, cell 0.8mm x 0.8mm @ 0.2mm resolution
 
 ```
