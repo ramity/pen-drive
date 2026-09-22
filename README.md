@@ -53,6 +53,61 @@ The storage density of pen drive is determined by the following factors:
 #### Example Calculation 1:
 
 ```
+Colors = 9
+Plot Size = 181mm x 206mm
+Cell Size = 0.8mm x 0.8mm
+
+Cells = 181 / 0.8 * 206 / 0.8
+      = 226 * 257
+      = 58,082 cells
+
+Storage = cells * colors
+        = 58,082 * 9
+        = 522,738 bits
+        = 65,342 bytes
+        = 65.34 KB
+```
+
+#### Example Calculation 2:
+
+```
+Colors = 9
+Plot Size = 181mm x 206mm
+Cell Size = 0.8mm x 0.4mm
+
+Cells = 181 / 0.8 * 206 / 0.4
+      = 226 * 515
+      = 116,390 cells
+
+Storage = cells * colors
+        = 116,390 * 9
+        = 1,047,510 bits
+        = 130,939 bytes
+        = 130.9 KB
+```
+
+#### Example Calculation 3:
+
+```
+Colors = 9
+Plot Size = 181mm x 206mm
+Cell Size = 0.6mm x 0.6mm
+Stroke Size = 0.3mm
+
+Cells = 181 / 0.6 * 206 / 0.6
+      = 301 * 343
+      = 103,243 cells
+
+Storage = cells * colors
+        = 103,243 * 9
+        = 929,187 bits
+        = 116,148 bytes
+        = 116.1 KB
+```
+
+#### Example Calculation 4:
+
+```
 Colors = 10
 Plot Size = 181mm x 206mm
 Cell Size = 0.5mm x 0.5mm
@@ -68,7 +123,7 @@ Storage = cells * colors
         = 186.43 KB
 ```
 
-#### Example Calculation 2:
+#### Example Calculation 5:
 
 ```
 Colors = 10
