@@ -17,9 +17,7 @@ RUN apt install -y pkg-config
 # Install pip packages
 RUN pip install --break-system-packages numpy
 RUN pip install --break-system-packages matplotlib
-# RUN pip install --break-system-packages requests
-# RUN pip install --break-system-packages tqdm
-RUN pip install --break-system-packages build123d
+RUN pip install --break-system-packages numpy-stl
 
 # OpenCV dependencies
 RUN apt install -y cmake g++ wget unzip
