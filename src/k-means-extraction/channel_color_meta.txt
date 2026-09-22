@@ -1,0 +1,11 @@
+--- Extracted Colors (RGB) ---
+Color 1: RGB(239, 202, 57)
+Color 2: RGB(218, 58, 171)
+Color 3: RGB(14, 8, 16)
+Color 4: RGB(235, 230, 231)
+Color 5: RGB(71, 158, 209)
+Color 6: RGB(230, 31, 40)
+Color 7: RGB(109, 169, 34)
+Color 8: RGB(49, 46, 174)
+Color 9: RGB(95, 69, 56)
+Color 10: RGB(235, 163, 120)
