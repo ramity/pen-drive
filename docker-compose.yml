@@ -13,4 +13,5 @@ services:
 
 networks:
   pen_drive:
+    name: pen_drive
     driver: bridge
