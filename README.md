@@ -12,7 +12,7 @@ Storing data in pen.
 
 ![scan](docs/80mmx80mmx10x0.8mmx0.8mmx0.2mm/crop.png)
 
-> A scan of the proof of concept plot
+> A scan of the proof of concept plot.
 
 - 80mm x 80mm plot, 10 colors, 0.8mm x 0.8mm cell size, 0.2mm resolution
 - ~12kb lossly stored on a sheet of cardstock.
